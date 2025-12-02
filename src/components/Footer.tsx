@@ -14,15 +14,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="/" className="flex items-center gap-3 mb-6">
-              <img 
-                src={voguardLogo} 
-                alt="VoGaurd Logo" 
-                className="h-10 w-auto rounded-lg"
-              />
-              <span className="text-xl font-bold font-display text-gradient-orange">
-                VoGaurd
-              </span>
+            <a href="/" className="flex items-center mb-6">
+              <div className="h-10 w-auto rounded-lg bg-black p-1 flex items-center justify-center">
+                <img 
+                  src={voguardLogo} 
+                  alt="VoGaurd Logo" 
+                  className="h-8 w-auto object-contain"
+                />
+              </div>
             </a>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Real-time voice fraud detection and deepfake prevention for the enterprise.
