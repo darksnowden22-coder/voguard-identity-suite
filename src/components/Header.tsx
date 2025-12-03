@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import voguardLogo from "@/assets/voguard-logo.jpg";
+import voguardLogo from "@/assets/voguard-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,14 +18,15 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center">
-            <div className="h-12 w-auto rounded-lg bg-black p-1 flex items-center justify-center">
-              <img 
-                src={voguardLogo} 
-                alt="VoGaurd Logo" 
-                className="h-10 w-auto object-contain"
-              />
-            </div>
+          <a href="/" className="flex items-center gap-3">
+            <img 
+              src={voguardLogo} 
+              alt="VoGaurd Logo" 
+              className="h-12 w-auto rounded-lg"
+            />
+            <span className="text-2xl font-bold font-display text-gradient-orange">
+              VoGaurd
+            </span>
           </a>
 
           {/* Desktop Navigation */}
